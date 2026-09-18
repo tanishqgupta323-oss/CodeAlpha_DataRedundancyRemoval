@@ -4,7 +4,7 @@
 A cloud-based system that detects and prevents duplicate data from entering a database, ensuring only unique, verified records are stored.
 
 ## 🔗 Live Demo
-[Add your Streamlit Cloud URL here]
+https://data-dedup-system.streamlit.app/
 
 ## 📌 Problem Statement
 Design a system that identifies and classifies data as redundant or unique, validates new data against existing records, and ensures only verified, non-duplicate entries are appended to a cloud database.
