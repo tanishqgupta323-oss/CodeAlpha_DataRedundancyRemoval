@@ -38,7 +38,8 @@ def get_db_connection():
         # Unique index on hash -> DB-level guarantee against duplicates
         collection.create_index("content_hash", unique=True)
         return collection
-    except ConnectionFailure:
+    except Exception as e:
+        st.error(f"DEBUG — actual connection error: {type(e).__name__}: {e}")
         return None
 
 
