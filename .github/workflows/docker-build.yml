@@ -1,5 +1,6 @@
 name: Build and Push Docker Image
 
+# Runs automatically on every push to main, and can also be triggered manually
 on:
   push:
     branches: [main]
@@ -24,7 +25,3 @@ jobs:
 
       - name: Push image to Docker Hub
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/data-dedup-app:latest
-
-
-dckr_pat_iTjub1SxbzEfjI4kegVN4LQL_0U
-docker login -u tanishqx
